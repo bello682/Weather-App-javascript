@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather</title>
+		<link rel="stylesheet" href="weather.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="header_h1">
+				<h1>Weather App</h1>
+			</div>
+			<div id="msg"></div>
+
+			<form class="input__button" id="form">
+				<input
+					type="text"
+					name="weather"
+					id="search_input"
+					placeholder="weather seacrh"
+				/>
+				<button type="submit">Get Weather</button>
+			</form>
+
+			<div class="icon_degree_overcast" id="weather_datas_info">
+				<div class="icon">
+					<!-- <img  src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon" id="icon"> -->
+				</div>
+				<div class="degree_name">
+					<h2 id="temperature_tem"></h2>
+					<p id="over_cast"></p>
+				</div>
+
+				<div class="feels_humidity_wind">
+					<div class="feels back_color" id="feels_like">
+						<p id="feels"></p>
+					</div>
+
+					<div class="humidity back_color">
+						<p id="humidity"></p>
+					</div>
+
+					<div class="wind back_color">
+						<p id="wind_speed"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="weather.js"></script>
+	</body>
+</html>
